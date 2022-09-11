@@ -276,7 +276,13 @@ bool8 MetatileBehavior_IsForcedMovementTile(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsIce_2(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_ICE)
+    if ((metatileBehavior == MB_ICE)
+    || (metatileBehavior == MB_NORMAL)
+    || (metatileBehavior == MB_CAVE)
+    || (metatileBehavior == MB_SAND)
+    || (metatileBehavior == MB_SHALLOW_WATER)
+    || (metatileBehavior == MB_PUDDLE)
+    || (metatileBehavior == MB_MOUNTAIN_TOP))
         return TRUE;
     else
         return FALSE;
