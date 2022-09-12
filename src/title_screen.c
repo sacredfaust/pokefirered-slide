@@ -1136,7 +1136,7 @@ static void SetPalOnOrCreateBlankSprite(bool32 mode)
 {
     u32 palIdx;
 
-    if (mode)
+    if (1)
     {
         palIdx = IndexOfSpritePaletteTag(2);
         LoadPalette(gGraphics_TitleScreen_FireOrLeafPals, palIdx * 16 + 0x100, 0x20);
