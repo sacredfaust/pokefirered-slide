@@ -748,6 +748,8 @@ void FadeScreen(u8 mode, s8 delay)
     case WEATHER_RAIN_THUNDERSTORM:
     case WEATHER_DOWNPOUR:
     case WEATHER_SNOW:
+        useWeatherPal = FALSE;
+        break;
     case WEATHER_FOG_HORIZONTAL:
     case WEATHER_SHADE:
     case WEATHER_DROUGHT:
