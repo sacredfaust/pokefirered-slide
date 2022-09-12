@@ -37,11 +37,14 @@
 #include "constants/songs.h"
 #include "constants/field_weather.h"
 
+extern u8 TeleportMenu[];
+
 enum StartMenuOption
 {
     STARTMENU_POKEDEX = 0,
     STARTMENU_POKEMON,
     STARTMENU_BAG,
+    STARTMENU_TELEPORT,
     STARTMENU_PLAYER,
     STARTMENU_SAVE,
     STARTMENU_OPTION,
@@ -80,6 +83,7 @@ static void StartMenu_FadeScreenIfLeavingOverworld(void);
 static bool8 StartMenuPokedexSanityCheck(void);
 static bool8 StartMenuPokedexCallback(void);
 static bool8 StartMenuPokemonCallback(void);
+static bool8 StartMenuTeleportCallback(void);
 static bool8 StartMenuBagCallback(void);
 static bool8 StartMenuPlayerCallback(void);
 static bool8 StartMenuSaveCallback(void);
@@ -116,12 +120,15 @@ static const struct MenuAction sStartMenuActionTable[] = {
     { gStartMenuText_Pokedex, {.u8_void = StartMenuPokedexCallback} },
     { gStartMenuText_Pokemon, {.u8_void = StartMenuPokemonCallback} },
     { gStartMenuText_Bag, {.u8_void = StartMenuBagCallback} },
+    { gStartMenuText_Teleport, {.u8_void = StartMenuTeleportCallback} },
     { gStartMenuText_Player, {.u8_void = StartMenuPlayerCallback} },
     { gStartMenuText_Save, {.u8_void = StartMenuSaveCallback} },
     { gStartMenuText_Option, {.u8_void = StartMenuOptionCallback} },
     { gStartMenuText_Exit, {.u8_void = StartMenuExitCallback} },
     { gStartMenuText_Retire, {.u8_void = StartMenuSafariZoneRetireCallback} },
     { gStartMenuText_Player, {.u8_void = StartMenuLinkPlayerCallback} }
+    
+    
 };
 
 static const struct WindowTemplate sSafariZoneStatsWindowTemplate = {
@@ -138,12 +145,14 @@ static const u8 *const sStartMenuDescPointers[] = {
     gStartMenuDesc_Pokedex,
     gStartMenuDesc_Pokemon,
     gStartMenuDesc_Bag,
+    gStartMenuDesc_Teleport,
     gStartMenuDesc_Player,
     gStartMenuDesc_Save,
     gStartMenuDesc_Option,
     gStartMenuDesc_Exit,
     gStartMenuDesc_Retire,
     gStartMenuDesc_Player
+    
 };
 
 static const struct BgTemplate sBGTemplates_AfterLinkSaveMessage[] = {
@@ -209,10 +218,12 @@ static void SetUpStartMenu_NormalField(void)
     if (FlagGet(FLAG_SYS_POKEMON_GET) == TRUE)
         AppendToStartMenuItems(STARTMENU_POKEMON);
     AppendToStartMenuItems(STARTMENU_BAG);
+    AppendToStartMenuItems(STARTMENU_TELEPORT);
     AppendToStartMenuItems(STARTMENU_PLAYER);
     AppendToStartMenuItems(STARTMENU_SAVE);
     AppendToStartMenuItems(STARTMENU_OPTION);
     AppendToStartMenuItems(STARTMENU_EXIT);
+    
 }
 
 static void SetUpStartMenu_SafariZone(void)
@@ -440,7 +451,8 @@ static void StartMenu_FadeScreenIfLeavingOverworld(void)
 {
     if (sStartMenuCallback != StartMenuSaveCallback
      && sStartMenuCallback != StartMenuExitCallback
-     && sStartMenuCallback != StartMenuSafariZoneRetireCallback)
+     && sStartMenuCallback != StartMenuSafariZoneRetireCallback
+     && sStartMenuCallback != StartMenuTeleportCallback)
     {
         StopPokemonLeagueLightingEffectTask();
         FadeScreen(FADE_TO_BLACK, 0);
@@ -492,6 +504,15 @@ static bool8 StartMenuBagCallback(void)
         return TRUE;
     }
     return FALSE;
+}
+
+static bool8 StartMenuTeleportCallback(void)
+{
+    PlayRainStoppingSoundEffect();
+    DestroySafariZoneStatsWindow();
+    CleanupOverworldWindowsAndTilemaps();
+    ScriptContext_SetupScript(TeleportMenu);
+    return TRUE;
 }
 
 static bool8 StartMenuPlayerCallback(void)
