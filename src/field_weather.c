@@ -10,6 +10,7 @@
 #include "constants/field_weather.h"
 #include "constants/weather.h"
 #include "constants/songs.h"
+#include "field_camera.h"
 
 #define DROUGHT_COLOR_INDEX(color) ((((color) >> 1) & 0xF) | (((color) >> 2) & 0xF0) | (((color) >> 3) & 0xF00))
 
@@ -211,6 +212,7 @@ static void Task_WeatherInit(u8 taskId)
     // When the screen fades in, this is set to TRUE.
     if (gWeatherPtr->readyForInit)
     {
+        UpdateCameraPanning();
         sWeatherFuncs[gWeatherPtr->currWeather].initAll();
         gTasks[taskId].func = Task_WeatherMain;
     }
@@ -362,7 +364,7 @@ static void FadeInScreenWithWeather(void)
     case WEATHER_SHADE:
         if (FadeInScreen_RainShowShade() == FALSE)
         {
-            gWeatherPtr->gammaIndex = 3;
+            gWeatherPtr->gammaIndex = 0;
             gWeatherPtr->palProcessingState = WEATHER_PAL_STATE_IDLE;
         }
         break;
@@ -401,7 +403,7 @@ static bool8 FadeInScreen_RainShowShade(void)
 
     if (++gWeatherPtr->fadeScreenCounter >= 16)
     {
-        ApplyGammaShift(0, 32, 3);
+        //ApplyGammaShift(0, 32, 3);
         gWeatherPtr->fadeScreenCounter = 16;
         return FALSE;
     }

@@ -5,7 +5,7 @@
   "music": "MUS_PEWTER",
   "region_map_section": "MAPSEC_VIRIDIAN_CITY",
   "requires_flash": false,
-  "weather": "WEATHER_SUNNY",
+  "weather": "WEATHER_SNOW",
   "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -32,8 +32,8 @@
   ],
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "in_connection": false,
       "x": 8,
       "y": 26,
       "elevation": 3,
@@ -43,11 +43,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_EventScript_DreamEaterTutor",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+      "in_connection": false,
       "x": 11,
       "y": 24,
       "elevation": 3,
@@ -57,11 +58,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_11"
+      "flag": "FLAG_TEMP_11",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
+      "in_connection": false,
       "x": 34,
       "y": 11,
       "elevation": 3,
@@ -71,11 +73,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_EventScript_OldMan",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "in_connection": false,
       "x": 21,
       "y": 6,
       "elevation": 3,
@@ -85,11 +88,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_EventScript_TutorialOldMan",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
+      "in_connection": false,
       "x": 20,
       "y": 12,
       "elevation": 3,
@@ -99,11 +103,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_EventScript_Woman",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "in_connection": false,
       "x": 33,
       "y": 26,
       "elevation": 3,
@@ -113,11 +118,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_EventScript_Youngster",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BOY",
+      "in_connection": false,
       "x": 16,
       "y": 22,
       "elevation": 3,
@@ -127,11 +133,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_EventScript_Boy",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+      "in_connection": false,
       "x": 18,
       "y": 5,
       "elevation": 3,
@@ -141,11 +148,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_12"
+      "flag": "FLAG_TEMP_12",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "in_connection": false,
       "x": 17,
       "y": 5,
       "elevation": 3,
@@ -155,7 +163,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_EventScript_ItemPotion",
-      "flag": "FLAG_HIDE_VIRIDIAN_CITY_POTION"
+      "flag": "FLAG_HIDE_VIRIDIAN_CITY_POTION",
+      "type": "object"
     }
   ],
   "warp_events": [
