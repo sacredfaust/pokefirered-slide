@@ -38,6 +38,7 @@
 #include "constants/field_weather.h"
 
 extern u8 TeleportMenu[];
+extern u8 DebugMenu[];
 
 enum StartMenuOption
 {
@@ -442,6 +443,15 @@ static bool8 StartCB_HandleInput(void)
         DestroySafariZoneStatsWindow();
         DestroyHelpMessageWindow_();
         CloseStartMenu();
+        return TRUE;
+    }
+
+    if (JOY_NEW(SELECT_BUTTON))
+    {
+        DestroySafariZoneStatsWindow();
+        DestroyHelpMessageWindow_();
+        CloseStartMenu();
+        ScriptContext_SetupScript(DebugMenu);
         return TRUE;
     }
     return FALSE;
