@@ -28,7 +28,12 @@ DebugMenu::
     setflag FLAG_BADGE06_GET
     setflag FLAG_BADGE07_GET
     setflag FLAG_BADGE08_GET
+    setflag FLAG_GOT_HM01
     setflag FLAG_GOT_HM02
+    setflag FLAG_GOT_HM03
+    setflag FLAG_GOT_HM04
+    setflag FLAG_GOT_HM05
+    setflag FLAG_GOT_HM06
     setflag FLAG_WORLD_MAP_PALLET_TOWN
     setflag FLAG_WORLD_MAP_VIRIDIAN_CITY
     setflag FLAG_WORLD_MAP_PEWTER_CITY
@@ -40,7 +45,14 @@ DebugMenu::
     setflag FLAG_WORLD_MAP_CINNABAR_ISLAND
     setflag FLAG_WORLD_MAP_INDIGO_PLATEAU_EXTERIOR
     setflag FLAG_WORLD_MAP_SAFFRON_CITY
-    givemon SPECIES_PIDGEOT, 80
+    givemon SPECIES_CHARIZARD, 100
+    givemon SPECIES_BLASTOISE, 100
+    givemon SPECIES_CHARMELEON, 100
+    giveitem ITEM_HM01
     giveitem ITEM_HM02
+    giveitem ITEM_HM03
+    giveitem ITEM_HM04
+    giveitem ITEM_HM05
+    giveitem ITEM_HM06
     release
     end
