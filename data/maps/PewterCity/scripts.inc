@@ -845,3 +845,7 @@ PewterCity_Movement_AideExit3::
 PewterCity_Movement_WalkInPlaceLeft::
 	walk_in_place_left
 	step_end
+
+PewterNewGymNPC::
+	msgbox PewterCity_Text_GoTakeOnBrock
+	closemessage
