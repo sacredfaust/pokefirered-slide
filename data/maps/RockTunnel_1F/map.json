@@ -13,10 +13,11 @@
   "show_map_name": true,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "in_connection": false,
       "x": 26,
       "y": 28,
       "elevation": 3,
@@ -30,6 +31,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "in_connection": false,
       "x": 39,
       "y": 27,
       "elevation": 3,
@@ -43,6 +45,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "in_connection": false,
       "x": 45,
       "y": 24,
       "elevation": 3,
@@ -56,6 +59,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "in_connection": false,
       "x": 20,
       "y": 17,
       "elevation": 3,
@@ -69,6 +73,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "in_connection": false,
       "x": 5,
       "y": 20,
       "elevation": 3,
@@ -82,8 +87,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 7,
-      "y": 5,
+      "in_connection": false,
+      "x": 3,
+      "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -95,10 +101,11 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
-      "x": 27,
+      "in_connection": false,
+      "x": 24,
       "y": 10,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -108,7 +115,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 37,
+      "in_connection": false,
+      "x": 38,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -121,8 +129,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 33,
-      "y": 22,
+      "in_connection": false,
+      "x": 35,
+      "y": 21,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -134,8 +143,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 22,
-      "y": 22,
+      "in_connection": false,
+      "x": 10,
+      "y": 24,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -176,8 +186,8 @@
       "dest_warp_id": 2
     },
     {
-      "x": 45,
-      "y": 21,
+      "x": 42,
+      "y": 19,
       "elevation": 3,
       "dest_map": "MAP_ROCK_TUNNEL_B1F",
       "dest_warp_id": 3
@@ -190,7 +200,9 @@
       "dest_warp_id": 1
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
