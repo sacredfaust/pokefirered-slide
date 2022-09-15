@@ -1161,7 +1161,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/MtMoon_1F/border.bin",
       "blockdata_filepath": "data/layouts/MtMoon_1F/map.bin"
     },
@@ -1173,7 +1173,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/MtMoon_B1F/border.bin",
       "blockdata_filepath": "data/layouts/MtMoon_B1F/map.bin"
     },
@@ -1185,7 +1185,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/MtMoon_B2F/border.bin",
       "blockdata_filepath": "data/layouts/MtMoon_B2F/map.bin"
     },
