@@ -210,8 +210,8 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 15,
-      "y": 59,
+      "x": 7,
+      "y": 58,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route10_EventScript_SouthRockTunnelSign"
