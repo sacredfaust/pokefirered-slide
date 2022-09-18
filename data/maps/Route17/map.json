@@ -43,8 +43,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
       "in_connection": false,
-      "x": 11,
-      "y": 15,
+      "x": 6,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
       "movement_range_x": 1,
