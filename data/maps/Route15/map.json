@@ -169,7 +169,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "in_connection": false,
-      "x": 20,
+      "x": 17,
       "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
