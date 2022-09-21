@@ -1281,7 +1281,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_DiglettsCave",
+      "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/DiglettsCave_B1F/border.bin",
       "blockdata_filepath": "data/layouts/DiglettsCave_B1F/map.bin"
     },
@@ -1293,7 +1293,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/VictoryRoad_1F/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad_1F/map.bin"
     },
@@ -1305,7 +1305,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/VictoryRoad_2F/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad_2F/map.bin"
     },
@@ -1317,7 +1317,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/VictoryRoad_3F/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad_3F/map.bin"
     },
@@ -2301,7 +2301,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_DiglettsCave",
+      "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/DiglettsCave_NorthEntrance/border.bin",
       "blockdata_filepath": "data/layouts/DiglettsCave_NorthEntrance/map.bin"
     },
@@ -2313,7 +2313,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_DiglettsCave",
+      "secondary_tileset": "gTileset_SeafoamIslands",
       "border_filepath": "data/layouts/DiglettsCave_SouthEntrance/border.bin",
       "blockdata_filepath": "data/layouts/DiglettsCave_SouthEntrance/map.bin"
     },
