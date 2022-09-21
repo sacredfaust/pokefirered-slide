@@ -283,7 +283,8 @@ bool8 MetatileBehavior_IsIce_2(u8 metatileBehavior)
     || (metatileBehavior == MB_SHALLOW_WATER)
     || (metatileBehavior == MB_PUDDLE)
     || (metatileBehavior == MB_MOUNTAIN_TOP)
-    || sBehaviorSurfable[metatileBehavior])
+    || sBehaviorSurfable[metatileBehavior]
+    || (metatileBehavior == MB_CYCLING_ROAD_PULL_DOWN))
         return TRUE;
     else
         return FALSE;
