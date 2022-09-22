@@ -2880,7 +2880,7 @@
           "map": "MAP_SAFARI_ZONE_CENTER",
           "base_label": "sSafariZoneCenter_FireRed",
           "land_mons": {
-            "encounter_rate": 21,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 25,
@@ -3188,7 +3188,7 @@
           "map": "MAP_SAFARI_ZONE_EAST",
           "base_label": "sSafariZoneEast_FireRed",
           "land_mons": {
-            "encounter_rate": 21,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 24,
@@ -3496,7 +3496,7 @@
           "map": "MAP_SAFARI_ZONE_NORTH",
           "base_label": "sSafariZoneNorth_FireRed",
           "land_mons": {
-            "encounter_rate": 21,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 26,
@@ -3804,7 +3804,7 @@
           "map": "MAP_SAFARI_ZONE_WEST",
           "base_label": "sSafariZoneWest_FireRed",
           "land_mons": {
-            "encounter_rate": 21,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 26,
