@@ -1495,7 +1495,7 @@
 #define FLAG_0x8EB                                                  (SYS_FLAGS + 0xEB)
 #define FLAG_0x8EC                                                  (SYS_FLAGS + 0xEC)
 #define FLAG_0x8ED                                                  (SYS_FLAGS + 0xED)
-#define FLAG_0x8EE                                                  (SYS_FLAGS + 0xEE)
+#define FLAG_SYS_RUN_SPEED_SLIDING                                                  (SYS_FLAGS + 0xEE)
 #define FLAG_0x8EF                                                  (SYS_FLAGS + 0xEF)
 #define FLAG_0x8F0                                                  (SYS_FLAGS + 0xF0)
 #define FLAG_0x8F1                                                  (SYS_FLAGS + 0xF1)

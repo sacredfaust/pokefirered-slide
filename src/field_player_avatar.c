@@ -328,7 +328,11 @@ static u8 DoForcedMovementInCurrentDirection(MovementAction movementAction)
 }
 
 static bool8 ForcedMovement_Slip(void)
-{
+{   
+    if(FlagGet(FLAG_SYS_ON_CYCLING_ROAD))
+        return DoForcedMovementInCurrentDirection(PlayerGoSpeed4);
+    if(FlagGet(FLAG_SYS_RUN_SPEED_SLIDING))
+        return DoForcedMovementInCurrentDirection(PlayerGoSpeed4);
     return DoForcedMovementInCurrentDirection(PlayerGoSpeed2);
 }
 
@@ -513,18 +517,21 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
         return;
     }
 
-    if ((heldKeys & B_BUTTON) && FlagGet(FLAG_SYS_B_DASH)
-        && !IsRunningDisallowed(gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior))
+    if ((heldKeys & B_BUTTON) && FlagGet(FLAG_SYS_B_DASH))
+    //&& !IsRunningDisallowed(gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior))
     {
-        if (PlayerIsMovingOnRockStairs(direction))
-            PlayerRunSlow(direction);
-        else
-            PlayerRun(direction);
-        gPlayerAvatar.flags |= PLAYER_AVATAR_FLAG_DASH;
+        //if (PlayerIsMovingOnRockStairs(direction))
+        //    PlayerRunSlow(direction);
+        //else
+        //    PlayerRun(direction);
+        //gPlayerAvatar.flags |= PLAYER_AVATAR_FLAG_DASH;
+        PlayerGoSpeed4(direction);
+        FlagSet(FLAG_SYS_RUN_SPEED_SLIDING);
         return;
     }
     else
     {
+        FlagClear(FLAG_SYS_RUN_SPEED_SLIDING);
         if (PlayerIsMovingOnRockStairs(direction))
             PlayerGoSlow(direction);
         else

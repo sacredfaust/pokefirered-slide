@@ -1,5 +1,6 @@
 TeleportMenu::
     lockall
+    goto_if_unset FLAG_SYS_POKEMON_GET, TP_NotYet
     yesnobox 0, 0
     switch VAR_RESULT
     case 1, TP_Yes
@@ -8,6 +9,8 @@ TeleportMenu::
     end
 
 TP_Yes::
+    clearflag FLAG_SYS_ON_CYCLING_ROAD
+    clearflag FLAG_SYS_RUN_SPEED_SLIDING
     fadescreen FADE_TO_BLACK
     special SetCB2WhiteOut
     waitstate
@@ -17,6 +20,15 @@ TP_Yes::
 TP_No::
     release
     end
+
+TP_NotYet::
+    msgbox TP_NoText
+    release
+    end
+
+TP_NoText::
+	.string "You need a Pokemon\n"
+	.string "for this to work.$"
 
 DebugMenu::
     lock
@@ -34,6 +46,7 @@ DebugMenu::
     setflag FLAG_GOT_HM04
     setflag FLAG_GOT_HM05
     setflag FLAG_GOT_HM06
+    setflag FLAG_SYS_B_DASH
     setflag FLAG_WORLD_MAP_PALLET_TOWN
     setflag FLAG_WORLD_MAP_VIRIDIAN_CITY
     setflag FLAG_WORLD_MAP_PEWTER_CITY
