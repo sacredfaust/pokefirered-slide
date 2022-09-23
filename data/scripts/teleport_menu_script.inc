@@ -1,6 +1,6 @@
 TeleportMenu::
     lockall
-    goto_if_unset FLAG_SYS_POKEMON_GET, TP_NotYet
+    goto_if_unset FLAG_TELEPORT_AFTER_RIVAL, TP_NotYet
     yesnobox 0, 0
     switch VAR_RESULT
     case 1, TP_Yes
@@ -27,8 +27,8 @@ TP_NotYet::
     end
 
 TP_NoText::
-	.string "You need a Pokemon\n"
-	.string "for this to work.$"
+	.string "You need to beat your\n"
+	.string "rival for this to work.$"
 
 DebugMenu::
     lock
