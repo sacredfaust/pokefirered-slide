@@ -12,7 +12,7 @@ TP_Yes::
     clearflag FLAG_SYS_ON_CYCLING_ROAD
     clearflag FLAG_SYS_RUN_SPEED_SLIDING
     fadescreen FADE_TO_BLACK
-    special SetCB2WhiteOut
+    special SetCB2WhiteOutTeleport
     waitstate
     release
     end

@@ -56,3 +56,9 @@ bool8 SetCB2WhiteOut(void)
     SetMainCallback2(CB2_WhiteOut);
     return FALSE;
 }
+
+bool8 SetCB2WhiteOutTeleport(void)
+{
+    SetMainCallback2(CB2_WhiteOutTeleport);
+    return FALSE;
+}
