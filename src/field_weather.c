@@ -1167,7 +1167,6 @@ void SlightlyDarkenPalsInWeather(u16 *palbuf, u16 *unused, u32 size)
     switch (gWeatherPtr->currWeather)
     {
     case WEATHER_RAIN:
-    case WEATHER_SNOW:
     case WEATHER_RAIN_THUNDERSTORM:
     case WEATHER_SHADE:
     case WEATHER_DOWNPOUR:
