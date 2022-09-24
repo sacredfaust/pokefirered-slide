@@ -450,3 +450,6 @@ PalletTown_EventScript_SignLadyStartShowSign::
 	call PalletTown_EventScript_SignLadyShowSign
 	release
 	end
+
+DebugRareCandies::
+	additem ITEM_RARE_CANDY, 99
