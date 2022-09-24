@@ -60,6 +60,9 @@ DebugMenu::
     setflag FLAG_WORLD_MAP_SAFFRON_CITY
     givemon SPECIES_CHARIZARD, 100
     givemon SPECIES_BLASTOISE, 100
+    givemon SPECIES_VENUSAUR, 100
+    givemon SPECIES_IVYSAUR, 100
+    givemon SPECIES_WARTORTLE, 100
     givemon SPECIES_CHARMELEON, 100
     giveitem ITEM_HM01
     giveitem ITEM_HM02
