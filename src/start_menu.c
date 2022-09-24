@@ -224,7 +224,8 @@ static void SetUpStartMenu_NormalField(void)
     AppendToStartMenuItems(STARTMENU_PLAYER);
     AppendToStartMenuItems(STARTMENU_SAVE);
     AppendToStartMenuItems(STARTMENU_OPTION);
-    AppendToStartMenuItems(STARTMENU_EXIT);
+    if (FlagGet(FLAG_TELEPORT_AFTER_RIVAL) == FALSE)
+        AppendToStartMenuItems(STARTMENU_EXIT);
     
 }
 
