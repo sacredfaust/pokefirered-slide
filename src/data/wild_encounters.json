@@ -1776,7 +1776,7 @@
           "map": "MAP_DIGLETTS_CAVE_B1F",
           "base_label": "sDiglettsCaveB1F_FireRed",
           "land_mons": {
-            "encounter_rate": 5,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 18,
@@ -5046,7 +5046,7 @@
           "map": "MAP_ROCK_TUNNEL_1F",
           "base_label": "sRockTunnel1F_FireRed",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 15,
@@ -5184,7 +5184,7 @@
           "map": "MAP_ROCK_TUNNEL_B1F",
           "base_label": "sRockTunnelB1F_FireRed",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 16,
