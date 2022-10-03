@@ -1,10 +1,6 @@
 TeleportMenu::
     lockall
-    goto_if_unset FLAG_TELEPORT_AFTER_RIVAL, TP_NotYet
-    yesnobox 0, 0
-    switch VAR_RESULT
-    case 1, TP_Yes
-    case 0, TP_No
+    goto TP_Yes
     release
     end
 

@@ -97,14 +97,14 @@
       "dest_warp_id": 1
     },
     {
-      "x": 5,
+      "x": 6,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_LAVENDER_TOWN_HOUSE1",
       "dest_warp_id": 1
     },
     {
-      "x": 10,
+      "x": 11,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_LAVENDER_TOWN_HOUSE2",
