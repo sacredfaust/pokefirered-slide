@@ -46,7 +46,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "in_connection": false,
-      "x": 19,
+      "x": 18,
       "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -121,20 +121,6 @@
       "elevation": 3,
       "dest_map": "MAP_SEAFOAM_ISLANDS_B2F",
       "dest_warp_id": 6
-    },
-    {
-      "x": 23,
-      "y": 8,
-      "elevation": 3,
-      "dest_map": "MAP_SEAFOAM_ISLANDS_B2F",
-      "dest_warp_id": 7
-    },
-    {
-      "x": 28,
-      "y": 8,
-      "elevation": 3,
-      "dest_map": "MAP_SEAFOAM_ISLANDS_B2F",
-      "dest_warp_id": 8
     },
     {
       "x": 21,
