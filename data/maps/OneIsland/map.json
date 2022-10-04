@@ -57,8 +57,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
       "in_connection": false,
-      "x": 13,
-      "y": 9,
+      "x": 14,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
       "movement_range_x": 1,
