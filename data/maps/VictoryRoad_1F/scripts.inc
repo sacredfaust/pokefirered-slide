@@ -10,8 +10,8 @@ VictoryRoad_1F_OnLoad::
 	end
 
 VictoryRoad_1F_EventScript_SetRockBarrier::
-	setmetatile 12, 14, METATILE_Cave_RockBarrier_Top, 1
-	setmetatile 12, 15, METATILE_Cave_RockBarrier_Bottom, 1
+	@setmetatile 12, 14, METATILE_Cave_RockBarrier_Top, 1
+	@setmetatile 12, 15, METATILE_Cave_RockBarrier_Bottom, 1
 	return
 
 VictoryRoad_1F_OnTransition::

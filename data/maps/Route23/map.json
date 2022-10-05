@@ -568,8 +568,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 3,
-      "y": 18,
+      "x": 1,
+      "y": 19,
       "elevation": 3,
       "item": "ITEM_LUM_BERRY",
       "flag": "HIDDEN_ITEM_ROUTE23_LUM_BERRY",
