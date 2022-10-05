@@ -38,7 +38,7 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 16,
+      "x": 17,
       "y": 28,
       "elevation": 3,
       "item": "ITEM_PP_MAX",
