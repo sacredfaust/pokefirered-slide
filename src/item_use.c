@@ -251,7 +251,7 @@ static void sub_80A1208(void)
 
 void FieldUseFunc_MachBike(u8 taskId)
 {
-    s16 x, y;
+    /*s16 x, y;
     u8 behavior;
 
     PlayerGetDestCoords(&x, &y);
@@ -268,8 +268,8 @@ void FieldUseFunc_MachBike(u8 taskId)
         sItemUseOnFieldCB = ItemUseOnFieldCB_Bicycle;
         sub_80A103C(taskId);
     }
-    else
-        PrintNotTheTimeToUseThat(taskId, gTasks[taskId].data[3]);
+    else*/
+    PrintNotTheTimeToUseThat(taskId, gTasks[taskId].data[3]);
 }
 
 static void ItemUseOnFieldCB_Bicycle(u8 taskId)

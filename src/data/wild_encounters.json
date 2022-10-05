@@ -7102,7 +7102,7 @@
           "map": "MAP_POWER_PLANT",
           "base_label": "sPowerPlant_FireRed",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 22,
