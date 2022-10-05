@@ -85,7 +85,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
       "in_connection": false,
-      "x": 9,
+      "x": 8,
       "y": 41,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -244,8 +244,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 12,
-      "y": 40,
+      "x": 0,
+      "y": 41,
       "elevation": 3,
       "item": "ITEM_MAX_ETHER",
       "flag": "HIDDEN_ITEM_ROUTE10_MAX_ETHER",
