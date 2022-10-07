@@ -448,14 +448,14 @@ static bool8 StartCB_HandleInput(void)
         return TRUE;
     }
 
-    if (JOY_NEW(SELECT_BUTTON))
+    /*if (JOY_NEW(SELECT_BUTTON))
     {
         DestroySafariZoneStatsWindow();
         DestroyHelpMessageWindow_();
         CloseStartMenu();
         ScriptContext_SetupScript(DebugMenu);
         return TRUE;
-    }
+    }*/
     return FALSE;
 }
 
